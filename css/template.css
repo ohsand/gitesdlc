@@ -127,7 +127,7 @@ ul a:active {
 
 #coverimage {
     overflow: hidden;
-    background-image: url(./images/cover2.jpg);
+    background-image: url(../images/cover2.jpg);
     height: 300px;
     width: 100%;
     background-position: center;
