@@ -1,0 +1,197 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    border-bottom: 5px dotted #BEEAEB;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2.6em;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.main p {
+    padding: 20px;
+    text-align: center;
+    line-height: 170%;
+}
+
+#gitesection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #BEEAEB;
+    flex-wrap: wrap;
+    border: 5px double white;
+}
+
+#gitesection h2 {
+    font-size: 1.8em;
+}
+
+#gites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gite {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 320px;
+    background-color: white;
+    margin: 20px;
+    align-items: center;
+    border-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 3px solid white;
+    overflow: hidden;
+    box-shadow: 1px 1px 12px 4px rgba(0,0,0,0.22);
+}
+
+.gite img {
+    height: 250px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.gite h6, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.gite h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.Button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    height: 48px;
+    margin-top: 15px        ;
+}
+
+.Button:hover{
+    color: #fff;
+    background-color: #616467;
+}
+
+#reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.review {
+    height: 175px;
+    width: 90%;
+    padding: 15px;
+    background-color: #BEEAEB;
+    border-radius: 15px;
+    margin: 20px;
+    position: relative;
+    box-shadow: 1px 1px 12px 4px rgba(0,0,0,0.22);
+}
+
+.review:hover {
+    box-shadow: 1px 1px 12px 4px rgba(0,0,0,0.52);
+    cursor: pointer;
+}
+
+.review h6 {
+    text-align: end;
+    right: 20px;
+}
+
+.fa-quote-left {
+    color: white;
+    font-size: 1.8em;
+}
+
+#coverimagetwo {
+    overflow: hidden;
+    background-image: url(./images/cover3.jpeg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    opacity: 90%;
+    border-bottom: 5px solid #BEEAEB;
+}
+
+@media screen and (max-width: 1050px) {
+    .giteselector {
+        height: fit-content;
+    }
+
+    .gitelist {
+        background-color:transparent;
+        margin-left: 25px;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .gitelist a {
+        margin-top: 5px;
+        margin-bottom: -5px;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        position: relative;
+        padding-bottom: 0px;
+    }
+}
+
+

@@ -1,0 +1,70 @@
+.recommendation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-top: 2px dotted #BEEAEB;
+}
+
+.recommendation h3, p {
+    text-align: center;
+}
+
+.recommendation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.recommendation a:hover {
+    opacity: 80%;
+}
+
+.recommendation img {
+    width: 50%;
+    height: auto;
+    padding: 20px 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    width: 50%;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.recAlt {
+    background-color: #F0F8FF;
+    flex-direction: row-reverse;
+}
+
+.recommendation img {
+    max-height: 300px;
+    width: auto;
+}
+
+@media screen and (max-width: 850px) {
+
+    .recommendation {
+        flex-direction: column;
+    }
+
+    .recommendation .description {
+        width: 100%;
+    }
+
+    .recommendation img {
+        width: 85%;
+        max-width: 450px;
+    }
+
+}

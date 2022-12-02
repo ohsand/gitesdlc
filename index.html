@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="hamburgers.css">
+    <script src="https://kit.fontawesome.com/7b78de16b0.js" crossorigin="anonymous"></script>
+    <title>Gites dans les champs</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logocropped.png">
+        <div id="languageSelect">
+            <a href="#"><img src="./images/frenchflag.png"></a>
+            <a href="#" class="activeen"><img src="./images/ukflag.png"></a>
+        </div>
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <ul class="navbar">
+            <li><a class="nav-link" href="./index.html">HOME</a></li>
+            <li>
+                <div class="giteselector">
+                    <a class="nav-link" href="./ourgites.html">OUR GITES</a>
+                    <div class="gitelist">
+                        <a class="nav-link" href="#">La Chouette</a>
+                        <a class="nav-link" href="#">L'Hirondelle</a>
+                        <a class="nav-link" href="#">Le Roitelet</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="nav-link" href="./outandabout.html">OUT AND ABOUT</a></li>
+            <li><a class="nav-link" href="#">GALLERY</a></li>
+            <li><a class="nav-link" href="./guestbook.html">GUEST BOOK</a></li>
+            <li><a class="nav-link" href="#">TARIFFS</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" href="#">HOW TO FIND US</a></li>
+            <li><a class="nav-link" href="#">TERMS AND CONDITIONS</a></li>
+        </ul>
+    </header>
+    <div id="coverimage">
+    </div>
+    <section class="main">
+        <h2>Welcome to</h2>
+        <h1>Gites Dans Les Champs</h1>
+        <p>We have three pretty, self-catering holiday cottages, situated in the beautiful countryside of Poitou-Charentes in the west of France.    Our gites are set on three acres of private parkland with a stunning swimming pool and sun terrace.
+            Ideally located for walking, cycling, kayaking and horse riding, this relaxing environment is the perfect place to spend time with family and friends. We are a mere 5 minute drive (or a short bike ride) to the local supermarket and boulangeries.<br>
+            Each gite has access to Wi-Fi internet, french TV, a DVD with a selection of DVDs, board games and a bluetooth speaker. We also have a selection of bikes available for guests to use.</p>
+    </section>
+
+    <div id="gitesection">
+        <h2>Our Gites</h2>
+        <div id="gites">
+            <div class="gite">
+                <img src="./images/giteone.jpeg">
+                <h3>La Chouette</h3>
+                <h6>Sleeps 8</h6>
+                <a class="Button">Discover</a>
+            </div>
+            <div class="gite">
+                <img src="./images/gitetwo.jpeg">
+                <h3>L'Hirondelle</h3>
+                <h6>Sleeps 8</h6>
+                <a class="Button">Discover</a>
+            </div>
+            <div class="gite">
+                <img src="./images/gitethree.jpeg">
+                <h3>Le Roitelet</h3>
+                <h6>Sleeps 4</h6>
+                <a class="Button">Discover</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="reviews">
+        <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+          <p>Thank you so much Colette and Gary for having us stay in your wonderful, lovely gite. We felt at home and enjoyed the clean, complete and comfortable cottage, as well as the pool and the very well-kept garden.</p>
+          <h6>- Dermot, Marieke, Lucas & Joost <br> August 2021</h6>
+        </div>
+
+        <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>A fabulous stay for our 5 families coming from the Netherlands, UK, Switzerland, Paris and Lyon.  An ideal location in an ideal gite.  Thank you for your everyday attentions and your welcoming smiles.  We really all enjoyed our holidays.</p>
+            <h6>- Jerome Thomas <br> August 2020</h6>
+        </div>
+
+        <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>The whole experience was first class from when we first booked to leaving. Colette had everything very well managed and had thought of all the details. Everyone in our party, which ranged from 11 to 72 yrs, loved it.  Clean, quiet and comfortable.</p>
+            <h6>- Dave, Hilary and Family <br> July / August 2019</h6>
+        </div>
+          
+    </div>
+    <div id="coverimagetwo">
+    </div>
+
+    <div class="container" id="footer">
+        <div id="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    var navbar = document.querySelector(".navbar");
+    // On click
+    hamburger.addEventListener("click", function() {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+      navbar.classList.toggle("visible");
+      // Do something else, like open/close menu
+    });
+  </script>
+</html>
