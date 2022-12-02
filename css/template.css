@@ -203,6 +203,22 @@ ul a:active {
         flex-direction: column;
     }
 
+    .giteselector {
+        height: fit-content;
+    }
+
+    .gitelist {
+        background-color:transparent;
+        margin-left: 25px;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .gitelist a {
+        margin-top: 5px;
+        margin-bottom: -5px;
+    }
+
 }
 
 @media screen and (min-width: 1050px) {

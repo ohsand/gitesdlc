@@ -169,21 +169,6 @@ h2 {
 }
 
 @media screen and (max-width: 1050px) {
-    .giteselector {
-        height: fit-content;
-    }
-
-    .gitelist {
-        background-color:transparent;
-        margin-left: 25px;
-        text-transform: uppercase;
-        border: none;
-    }
-
-    .gitelist a {
-        margin-top: 5px;
-        margin-bottom: -5px;
-    }
 
     .review {
         display: flex;
