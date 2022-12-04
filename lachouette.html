@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <script src="https://kit.fontawesome.com/7b78de16b0.js" crossorigin="anonymous"></script>
+    <title>Gites dans les champs</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logocropped.png">
+        <div id="languageSelect">
+            <a href="#"><img src="./images/frenchflag.png"></a>
+            <a href="#" class="activeen"><img src="./images/ukflag.png"></a>
+        </div>
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <ul class="navbar">
+            <li><a class="nav-link" href="./index.html">HOME</a></li>
+            <li>
+                <div class="giteselector">
+                    <a class="nav-link" href="./ourgites.html">OUR GITES</a>
+                    <div class="gitelist">
+                        <a class="nav-link" href="./lachouette.html">La Chouette</a>
+                        <a class="nav-link" href="#">L'Hirondelle</a>
+                        <a class="nav-link" href="#">Le Roitelet</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="nav-link" href="./outandabout.html">OUT AND ABOUT</a></li>
+            <li><a class="nav-link" href="./gallery.html">GALLERY</a></li>
+            <li><a class="nav-link" href="./guestbook.html">GUEST BOOK</a></li>
+            <li><a class="nav-link" href="#">TARIFFS</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" href="#">HOW TO FIND US</a></li>
+            <li><a class="nav-link" href="#">TERMS AND CONDITIONS</a></li>
+        </ul>
+    </header>
+    <div id="coverimage">
+    </div>
+    <h2>La Chouette</h2>
+
+    <div class="gitegallery">
+        <img src="./lachouette/1.jfif">
+        <!-- <img src="./lachouette/2.jfif"> -->
+        <img src="./lachouette/3.jfif">
+        <img src="./lachouette/4.jfif">
+        <img src="./lachouette/5.jfif">
+        <img src="./lachouette/6.jfif">
+        <img src="./lachouette/7.jfif">
+        <img src="./lachouette/8.jfif">
+        <img src="./lachouette/9.jfif">
+        <img src="./lachouette/10.jfif">
+        <img src="./lachouette/11.jfif">
+        <img src="./lachouette/12.jfif">
+        <img src="./lachouette/13.jfif">
+        <img src="./lachouette/14.jfif">
+        <img src="./lachouette/15.jfif">
+        <img src="./lachouette/16.jfif">
+    </div>
+    
+
+    <div class="description">
+        <h3>La chouette</h3>
+        <h4>A spacious 4 bedroom gite sleeping 8</h4>
+        <div class="giteinfo">
+            <div class="descriptionleft">
+                <p>Approached via its own wide garden path, this impressive gite is entered through large glazed French doors opening into a magnificent atrium which rises to full height from a patterned tiled floor to magnificent oak roof timbers and a galleried landing.  A cosy log-burner has recently been installed for winter lets.<br><br>Accommodating 8 people, the spacious open plan living area comprises kitchen, dining area and comfortable lounge. The kitchen is generously equipped with dishwasher, fridge freezer, washing machine, microwave and gas cooker. The lounge and dining areas are well furnished with carefully selected local items to give an authentic flavour.<br><br>In addition to the glazed entrance doors, there are two further French doors leading onto the courtyard. Also on the ground floor is a pretty twin-bedded room and a bathroom of “wet-room” design, comprising shower, washbasin and WC and non-slip floor tiles, heated towel rail and fully tiled walls. </p>
+            </div>
+            <div class="descriptionright">
+                <p>Upstairs by way of an attractive hardwood staircase are three further bedrooms with attractive chestnut flooring and a second bathroom.  There are two double bedrooms and a twin-bedded room, each furnished in local dark oak furniture, providing ample storage, with views across fields to the ancient village of Vaussais and its 11th century church. The upstairs bathroom comprises a marble-topped vanity basin with lighted mirror, walk-in shower and WC, and heated towel rail.<br><br>A galleried landing overlooks the atrium and lounge and the courtyard garden.  All rooms are fitted with electric panel heaters.  WiFi, French TV, DVD player and a selection of DVDs are available for guests.  A cot and high chair are available upon request.<br><br>Outside, the garden area has its own barbecue, table and chairs for those al fresco meals, as well as a patio alongside the courtyard.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="footer">
+        <div id="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    var navbar = document.querySelector(".navbar");
+    // On click
+    hamburger.addEventListener("click", function() {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+      navbar.classList.toggle("visible");
+      // Do something else, like open/close menu
+    });
+  </script>
+</html>

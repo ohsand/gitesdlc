@@ -1,9 +1,18 @@
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6em;
+    color: black;
+    font-style: italic;
+}
+
 .gallery {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10px;
+    padding: 10px 10px;
 }
 
 .gallery a {
@@ -23,10 +32,78 @@
     transform: scale(1.05);
 }
 
+
+.gitegallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+.gitegallery img {
+    padding: 10px;
+    display: block;
+    max-width: 25%;
+    max-height: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-top: 2px dotted #BEEAEB;
+}
+
+.description h3, .description h4 {
+    padding-left: 15px;
+    margin: 10px 0px;
+}
+
+.description h3 {
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.giteinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.descriptionleft, .descriptionright {
+    width: 50%;
+    padding: 15px;
+}
+
+.descriptionleft {
+    border-right: 2px solid #BEEAEB;
+}
+
 @media screen and (max-width: 1050px) {
     .gallery a {
         max-height: 100%;
         max-width: 33%;
+    }
+
+    .gitegallery img {
+        max-height: 100%;
+        max-width: 33%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .giteinfo {
+        flex-direction: column;
+    }
+    
+    .descriptionleft, .descriptionright {
+        width: 100%;
+    }
+    
+    .descriptionleft {
+        border: none;
     }
 }
 
@@ -35,10 +112,20 @@
         max-height: 100%;
         max-width: 50%;
     }
+
+    .gitegallery img {
+        max-height: 100%;
+        max-width: 50%;
+    }
 }
 
 @media screen and (max-width: 540px) {
     .gallery a {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .gitegallery img {
         max-height: 100%;
         max-width: 100%;
     }
