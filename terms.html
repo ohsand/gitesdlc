@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="./css/terms.css">
+    <script src="https://kit.fontawesome.com/7b78de16b0.js" crossorigin="anonymous"></script>
+    <title>Gites dans les champs</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logocropped.png">
+        <div id="languageSelect">
+            <a href="#"><img src="./images/frenchflag.png"></a>
+            <a href="#" class="activeen"><img src="./images/ukflag.png"></a>
+        </div>
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <ul class="navbar">
+            <li><a class="nav-link" href="./index.html">HOME</a></li>
+            <li>
+                <div class="giteselector">
+                    <a class="nav-link" href="./ourgites.html">OUR GITES</a>
+                    <div class="gitelist">
+                        <a class="nav-link" href="./lachouette.html">La Chouette</a>
+                        <a class="nav-link" href="./lhirondelle.html">L'Hirondelle</a>
+                        <a class="nav-link" href="./leroitelet.html">Le Roitelet</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="nav-link" href="./outandabout.html">OUT AND ABOUT</a></li>
+            <li><a class="nav-link" href="./gallery.html">GALLERY</a></li>
+            <li><a class="nav-link" href="./guestbook.html">GUEST BOOK</a></li>
+            <li><a class="nav-link" href="./tariffs.html">TARIFFS</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" href="./howtofindus.html">HOW TO FIND US</a></li>
+            <li><a class="nav-link" href="./terms.html">TERMS AND CONDITIONS</a></li>
+        </ul>
+    </header>
+    <div id="coverimage">
+    </div>
+    
+    <h1>Terms and conditions</h1>
+    <div class="main">
+        <p>During July and August bookings are generally Saturday 4 pm to Saturday 10 am. Outside of the main holiday period, we also welcome long weekend breaks and short stays. Please contact us for details.<br><br>A non-refundable deposit of 25% is required when booking. Bookings are not confirmed until the completed booking form is returned via email and the deposit received - within 3 working days of making the reservation. <br><br>The remaining balance to be paid 8 weeks prior to arrival.<br><br>You may only cancel the booking if notice of cancellation is received in writing (via email) from the lead guest.<br>The following cancellation charges will be payable:</p>
+        <div class="list">
+            <ul>
+                <li><p>If notice of cancellation is received more than eight weeks before the holiday commencement date, the full amount of the deposit is forfeit;</p></li>
+                <li><p>If notice of cancellation is received between eight and six weeks before the holiday commencement date, you will remain liable to pay a sum equal to 50% of the total accommodation price;</p></li>
+                <li><p>If notice of cancellation is received between six and four weeks before the holiday commencement date, you will remain liable to pay a sum equal to 75% of the total accommodation price;</p></li>
+                <li><p>If notice of cancellation is received less than four weeks before the holiday commencement date, you will remain liable to pay the whole of the total accommodation price.</p></li>
+            </ul>
+        </div>
+        <p><b>We highly recommend you take out adequate holiday insurance to cover the possibility of cancellation.</b><br><br>In the months May to September (inclusive) the total accommodation price includes all electricity (except for use of electric convector heaters), gas (except when used for central heating) and water charges. Outside this period (October to April inclusive) the metered cost of gas and electricity will be charged additionally at the end of the holiday and will be payable locally.<br><br>Bed linen (with the exception of cot bedding), towels and pool towels are all provided. A cot, high chair and baby bath can be provided at no additional cost provided the requests are made at the time of booking.<br><br>Pathways from the car park to each gite are level. Ground floor bedrooms and bathroom facilities can be available in each gite. Access to the pool side is possible by wheelchair, although there are no physical aids for entry and egress from the pool itself.<br><br>A refundable security and breakages deposit of 300€ per gite per week is also payable 8 weeks prior to arrival. This will be refunded in full 1 week after rental completion if there are no breakages, etc.<br><br>Pets cannot, unfortunately, be accommodated.<br><br>Full terms and conditions will be sent upon enquiry.</p>
+    </div>
+
+    <div class="container" id="footer">
+        <div id="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    var navbar = document.querySelector(".navbar");
+    // On click
+    hamburger.addEventListener("click", function() {
+      // Toggle class "is-active"
+      hamburger.classList.toggle("is-active");
+      navbar.classList.toggle("visible");
+      // Do something else, like open/close menu
+    });
+  </script>
+</html>
