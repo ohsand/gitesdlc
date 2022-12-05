@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.6em;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    padding: 15px;
+    background-color: #F0F8FF;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gitetariff {
+    border: 2px dotted #BEEAEB;
+    border-radius: 15px;
+    padding-top: 0;
+    margin: 10px 25px;
+}
+
+.gitetariff h3 {
+    width: 100%;
+    background-color: #BEEAEB;
+    padding-top: 10px;
+    margin: 0;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.gitetariff p {
+    padding: 0px 15px;
+}
+
+.conditions {
+    margin: 15px;
+}
